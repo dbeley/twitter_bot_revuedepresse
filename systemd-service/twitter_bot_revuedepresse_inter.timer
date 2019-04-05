@@ -1,0 +1,10 @@
+[Unit]
+Description=twitter_bot_revuedepresse (international version)
+
+[Timer]
+#OnBootSec=15min
+#OnUnitActiveSec=1d
+OnCalendar=*-*-* 09:02:00
+
+[Install]
+WantedBy=timers.target
