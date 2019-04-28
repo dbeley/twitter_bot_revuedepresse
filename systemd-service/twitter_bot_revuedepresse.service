@@ -4,7 +4,10 @@ Description=twitter bot
 [Service]
 Type=oneshot
 WorkingDirectory=%h/Documents/scrap_revuedepresse
-ExecStart=/usr/bin/python %h/Documents/twitter_bot_revuedepresse/twitter_bot_revuedepresse.py
+# Without virtualenv
+# ExecStart=/usr/bin/python %h/Documents/twitter_bot_revuedepresse/twitter_bot_revuedepresse.py
+# With virtualenv
+ExecStart=%h/Documents/twitter_bot_revuedepresse/venv/bin/python %h/Documents/twitter_bot_revuedepresse/venv/bin/twitter_bot_revuedepresse.py
 
 [Install]
 WantedBy=multi-user.target

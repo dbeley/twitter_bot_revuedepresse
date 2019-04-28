@@ -5,6 +5,10 @@ Description=twitter bot (international version)
 Type=oneshot
 WorkingDirectory=%h/Documents/scrap_revuedepresse
 ExecStart=/usr/bin/python %h/Documents/twitter_bot_revuedepresse/twitter_bot_revuedepresse.py --international
+# Without virtualenv
+# ExecStart=/usr/bin/python /usr/bin/github_stats -f repos_list.txt
+# With virtualenv
+ExecStart=%h/Documents/github_stats/venv/bin/python %h/Documents/github_stats/venv/bin/github_stats -f repos_list.txt
 
 [Install]
 WantedBy=multi-user.target
