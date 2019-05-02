@@ -23,6 +23,7 @@ def tweet_image(api, filename, title):
 #revuedepresse
     '''
     api.update_with_media(filename, status=message)
+    time.sleep(60)
 
 
 def twitterconnect():
