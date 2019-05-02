@@ -7,7 +7,9 @@ WorkingDirectory=%h/Documents/scrap_revuedepresse
 # Without virtualenv
 # ExecStart=/usr/bin/python %h/Documents/twitter_bot_revuedepresse/twitter_bot_revuedepresse.py
 # With virtualenv
-ExecStart=%h/Documents/twitter_bot_revuedepresse/venv/bin/python %h/Documents/twitter_bot_revuedepresse/twitter_bot_revuedepresse.py
+# ExecStart=%h/Documents/twitter_bot_revuedepresse/venv/bin/python %h/Documents/twitter_bot_revuedepresse/twitter_bot_revuedepresse.py
+# With pipenv
+ExecStart=/usr/bin/pipenv run python %h/Documents/twitter_bot_revuedepresse/twitter_bot_revuedepresse.py
 
 [Install]
 WantedBy=multi-user.target
