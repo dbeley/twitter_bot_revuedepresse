@@ -1,4 +1,4 @@
+.venv/
 praw.ini
 config.ini
-venv/
 tags
