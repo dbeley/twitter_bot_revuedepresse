@@ -2,9 +2,9 @@ import datetime
 import locale
 import argparse
 import configparser
-import tweepy
 import time
 import logging
+import tweepy
 from pathlib import Path
 
 logger = logging.getLogger()
@@ -52,8 +52,7 @@ def main():
 
     for file in sorted(p):
         name = file.stem.split('_', 1)[-1].replace("_", " ")
-        print(name)
-        # print(file)
+        logger.info(name)
         tweet_image(api, str(file), name)
 
 
