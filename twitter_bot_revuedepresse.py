@@ -39,7 +39,6 @@ def twitterconnect():
 
 def main():
     args = parse_args()
-    # test = args.test
     international = args.international
 
     api = twitterconnect()
