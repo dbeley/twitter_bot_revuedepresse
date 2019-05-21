@@ -1,5 +1,5 @@
 [Unit]
-Description=twitter bot (international version)
+Description=twitter_bot_revuedepresse_inter.service
 
 [Service]
 Type=oneshot

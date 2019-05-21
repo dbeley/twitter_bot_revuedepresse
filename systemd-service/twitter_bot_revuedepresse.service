@@ -1,5 +1,5 @@
 [Unit]
-Description=twitter bot
+Description=twitter_bot_revuedepresse.service
 
 [Service]
 Type=oneshot
