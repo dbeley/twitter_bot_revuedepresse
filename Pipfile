@@ -6,16 +6,7 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
-certifi = "*"
-chardet = "*"
-idna = "*"
-oauthlib = "*"
-requests = "*"
-requests-oauthlib = "*"
-six = "*"
 tweepy = "*"
-urllib3 = "*"
-PySocks = "*"
 
 [requires]
 python_version = "3.7"
